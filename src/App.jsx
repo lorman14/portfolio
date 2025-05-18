@@ -8,7 +8,7 @@ function App() {
       tags: ["JavaScript", "API"],
       image: "https://images.unsplash.com/photo-1604594849809-dfedbc827105?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
       color: "from-blue-900 to-blue-800",
-      link: "/public/converter-activity/index.html"
+      link: "/converter-activity/index.html"
     },
     {
       title: "Todo List App",
@@ -24,7 +24,7 @@ function App() {
       tags: ["JavaScript", "CSS"],
       image: "https://images.unsplash.com/photo-1587145820266-a5951ee6f620?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
       color: "from-green-900 to-green-800",
-      link: "/public/calculator/index.html"
+      link: "/calculator/index.html"
     },
     {
       title: "Number Loop Analyzer",
@@ -32,7 +32,7 @@ function App() {
       tags: ["JavaScript", "Algorithms"],
       image: "https://images.unsplash.com/photo-1610563166150-b34df4f3bcd6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1376&q=80",
       color: "from-indigo-900 to-indigo-800",
-      link: "/public/loop/index.html"
+      link: "/loop/index.html"
     },
     {
       title: "Employee Management",
@@ -40,7 +40,7 @@ function App() {
       tags: ["JavaScript", "Data Structures"],
       image: "https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
       color: "from-amber-900 to-amber-800",
-      link: "/public/ARRAY_OBJECT/index.html"
+      link: "/ARRAY_OBJECT/index.html"
     }
   ];
 
@@ -172,9 +172,15 @@ function App() {
                         <span key={i} className="text-xs bg-gray-700 px-2 py-1 rounded">{tag}</span>
                       ))}
                     </div>
-                    <a href={project.link} className="text-blue-400 text-sm hover:underline transition-colors duration-300">
-                      View →
+                    <a
+                      href={project.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-sm bg-green-600 hover:bg-green-700 text-white py-2 px-4 rounded transition-colors duration-200"
+                    >
+                      View Project
                     </a>
+
                   </div>
                 </div>
               </div>
@@ -273,7 +279,7 @@ function App() {
       <footer className="py-8 text-center bg-gray-900 border-t border-gray-800">
         <div className="max-w-7xl mx-auto px-6">
           <p className="text-gray-500 text-sm">
-          Lorman Heart Buenavista
+            Lorman Heart Buenavista
           </p>
         </div>
       </footer>
