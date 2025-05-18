@@ -101,7 +101,7 @@ function App() {
           <div className="absolute inset-0 bg-gradient-to-br from-blue-400/10 to-purple-400/10"></div>
           <div className="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-gray-700 relative z-10 shadow-xl">
             <img
-              src="/public/1.jpg"
+              src="/1.jpg"
               alt="Profile"
               className="w-full h-full object-cover"
             />
